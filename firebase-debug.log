@@ -1,0 +1,346 @@
+[debug] [2019-05-24T10:11:22.256Z] ----------------------------------------------------------------------
+[debug] [2019-05-24T10:11:22.260Z] Command:       /usr/bin/node /usr/local/bin/firebase --debug serve
+[debug] [2019-05-24T10:11:22.261Z] CLI Version:   6.10.0
+[debug] [2019-05-24T10:11:22.261Z] Platform:      linux
+[debug] [2019-05-24T10:11:22.262Z] Node Version:  v8.10.0
+[debug] [2019-05-24T10:11:22.262Z] Time:          Fri May 24 2019 13:11:22 GMT+0300 (+03)
+[debug] [2019-05-24T10:11:22.263Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-24T10:11:22.287Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-24T10:11:22.287Z] > authorizing via signed-in user
+[debug] [2019-05-24T10:11:22.288Z] [iam] checking project sendtivity for permissions ["firebase.projects.get"]
+[debug] [2019-05-24T10:11:22.290Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2019-05-24T10:11:22.291Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2019-05-24T10:11:22.536Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-24T10:11:22.548Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sendtivity:testIamPermissions  
+
+[debug] [2019-05-24T10:11:23.576Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-24T10:11:23.581Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sendtivity  
+ 
+[debug] [2019-05-24T10:11:24.601Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/erkankrcr/workSpace/Sendtivity'...
+[info] 
+[info] ✔  functions: Using node@8 from host.
+[debug] [2019-05-24T10:11:24.619Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/328630731499/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-24T10:11:24.620Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/328630731499:getServerAppConfig  
+ 
+[debug] [2019-05-24T10:11:24.865Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-05-24T10:11:25.009Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/home/erkankrcr/workSpace/Sendtivity/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-05-24T10:11:25.704Z] Functions runtime initialized.
+[debug] [2019-05-24T10:11:25.705Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:11:28.988Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/sendtivity/us-central1/GetTimeLineWeb
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/sendtivity/us-central1/GetTimeLineApp
+[debug] [2019-05-24T10:11:29.210Z] Unsupported trigger: {"eventTrigger":{"resource":"projects/sendtivity","eventType":"providers/firebase.auth/eventTypes/user.create","service":"firebaseauth.googleapis.com"},"name":"UserCreate","entryPoint":"UserCreate"}
+[info] Ignoring trigger "UserCreate" because the service "firebaseauth.googleapis.com" is not yet supported.
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/sendtivity/us-central1/GetTimeLineTest
+[debug] [2019-05-24T10:12:49.548Z] Accepted request GET /sendtivity/us-central1/GetTimeLineWeb --> GetTimeLineWeb
+[debug] [2019-05-24T10:12:50.645Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "GetTimeLineWeb"
+[debug] [2019-05-24T10:12:50.648Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:12:53.868Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:12:54.100Z] Trigger "GetTimeLineWeb" has been found, beginning invocation!
+[debug] [2019-05-24T10:12:54.100Z] 
+[debug] [2019-05-24T10:12:54.100Z] Running GetTimeLineWeb in mode HTTPS
+[debug] [2019-05-24T10:12:54.119Z] {"socketPath":"/tmp/firebase_emulator_invocation_8654.sock"}
+[debug] [2019-05-24T10:12:54.121Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_8654.sock"}
+[debug] [2019-05-24T10:12:54.236Z] Ephemeral server used!
+[debug] [2019-05-24T10:12:54.254Z] Ephemeral server survived.
+[info] >  [2019-05-24T10:12:55.970Z]  @firebase/database: FIREBASE WARNING: Exception was thrown by user callback. TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14) 
+[info] >  /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:706
+[info] >              throw e;
+[info] >              ^
+[info] >  
+[info] >  TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14)
+[debug] [2019-05-24T10:13:09.407Z] Accepted request GET /sendtivity/us-central1/GetTimeLineWeb?mAuthID=EtOwvNGJKLPkkhKNSB0ROtRUW3s2 --> GetTimeLineWeb
+[debug] [2019-05-24T10:13:10.143Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "GetTimeLineWeb"
+[debug] [2019-05-24T10:13:10.145Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:13:13.160Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:13:13.339Z] Trigger "GetTimeLineWeb" has been found, beginning invocation!
+[debug] [2019-05-24T10:13:13.340Z] 
+[debug] [2019-05-24T10:13:13.341Z] Running GetTimeLineWeb in mode HTTPS
+[debug] [2019-05-24T10:13:13.359Z] {"socketPath":"/tmp/firebase_emulator_invocation_8818.sock"}
+[debug] [2019-05-24T10:13:13.360Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_8818.sock"}
+[debug] [2019-05-24T10:13:13.463Z] Ephemeral server used!
+[debug] [2019-05-24T10:13:13.475Z] Ephemeral server survived.
+[info] >  [2019-05-24T10:13:15.225Z]  @firebase/database: FIREBASE WARNING: Exception was thrown by user callback. TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14) 
+[info] >  /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:706
+[info] >              throw e;
+[info] >              ^
+[info] >  
+[info] >  TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14)
+[debug] [2019-05-24T10:13:28.536Z] Accepted request GET /sendtivity/us-central1/GetTimeLineWeb?mAuthID=EtOwvNGJKLPkkhKNSB0ROtRUW3s2 --> GetTimeLineWeb
+[debug] [2019-05-24T10:13:29.227Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "GetTimeLineWeb"
+[debug] [2019-05-24T10:13:29.228Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:13:31.928Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:13:32.099Z] Trigger "GetTimeLineWeb" has been found, beginning invocation!
+[debug] [2019-05-24T10:13:32.100Z] 
+[debug] [2019-05-24T10:13:32.100Z] Running GetTimeLineWeb in mode HTTPS
+[debug] [2019-05-24T10:13:32.114Z] {"socketPath":"/tmp/firebase_emulator_invocation_8884.sock"}
+[debug] [2019-05-24T10:13:32.115Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_8884.sock"}
+[debug] [2019-05-24T10:13:32.221Z] Ephemeral server used!
+[debug] [2019-05-24T10:13:32.229Z] Ephemeral server survived.
+[info] >  [2019-05-24T10:13:34.022Z]  @firebase/database: FIREBASE WARNING: Exception was thrown by user callback. TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14) 
+[info] >  /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:706
+[info] >              throw e;
+[info] >              ^
+[info] >  
+[info] >  TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14)
+[debug] [2019-05-24T10:13:55.648Z] File /home/erkankrcr/workSpace/Sendtivity/functions/index.js changed, reloading triggers
+[debug] [2019-05-24T10:13:57.267Z] Functions runtime initialized.
+[debug] [2019-05-24T10:13:57.268Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:14:00.976Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[info] Shutting down...
+[debug] [2019-05-24T10:14:04.155Z] ----------------------------------------------------------------------
+[debug] [2019-05-24T10:14:04.159Z] Command:       /usr/bin/node /usr/local/bin/firebase --debug serve
+[debug] [2019-05-24T10:14:04.160Z] CLI Version:   6.10.0
+[debug] [2019-05-24T10:14:04.160Z] Platform:      linux
+[debug] [2019-05-24T10:14:04.160Z] Node Version:  v8.10.0
+[debug] [2019-05-24T10:14:04.160Z] Time:          Fri May 24 2019 13:14:04 GMT+0300 (+03)
+[debug] [2019-05-24T10:14:04.160Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-05-24T10:14:04.170Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-05-24T10:14:04.170Z] > authorizing via signed-in user
+[debug] [2019-05-24T10:14:04.171Z] [iam] checking project sendtivity for permissions ["firebase.projects.get"]
+[debug] [2019-05-24T10:14:04.173Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sendtivity:testIamPermissions  
+
+[debug] [2019-05-24T10:14:05.390Z] <<< HTTP RESPONSE 200
+[debug] [2019-05-24T10:14:05.394Z] >>> HTTP REQUEST GET https://cloudresourcemanager.googleapis.com/v1/projects/sendtivity  
+ 
+[debug] [2019-05-24T10:14:06.374Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Serving from '/home/erkankrcr/workSpace/Sendtivity'...
+[info] 
+[info] ✔  functions: Using node@8 from host.
+[debug] [2019-05-24T10:14:06.391Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/328630731499/clients/_:getWebAppConfig  
+ 
+[debug] [2019-05-24T10:14:06.392Z] >>> HTTP REQUEST GET https://mobilesdk-pa.googleapis.com/v1/projects/328630731499:getServerAppConfig  
+ 
+[debug] [2019-05-24T10:14:06.725Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Emulator started at http://localhost:5001
+[debug] [2019-05-24T10:14:06.826Z] <<< HTTP RESPONSE 200
+[info] i  functions: Watching "/home/erkankrcr/workSpace/Sendtivity/functions" for Cloud Functions...
+[info] i  hosting: Serving hosting files from: public
+[info] ✔  hosting: Local server: http://localhost:5000
+[debug] [2019-05-24T10:14:07.543Z] Functions runtime initialized.
+[debug] [2019-05-24T10:14:07.545Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:14:10.186Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/sendtivity/us-central1/GetTimeLineWeb
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/sendtivity/us-central1/GetTimeLineApp
+[debug] [2019-05-24T10:14:10.371Z] Unsupported trigger: {"eventTrigger":{"resource":"projects/sendtivity","eventType":"providers/firebase.auth/eventTypes/user.create","service":"firebaseauth.googleapis.com"},"name":"UserCreate","entryPoint":"UserCreate"}
+[info] Ignoring trigger "UserCreate" because the service "firebaseauth.googleapis.com" is not yet supported.
+[info] i  functions: HTTP trigger initialized at http://localhost:5001/sendtivity/us-central1/GetTimeLineTest
+[debug] [2019-05-24T10:14:17.980Z] Accepted request GET /sendtivity/us-central1/GetTimeLineWeb?mAuthID=EtOwvNGJKLPkkhKNSB0ROtRUW3s2 --> GetTimeLineWeb
+[debug] [2019-05-24T10:14:18.785Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "GetTimeLineWeb"
+[debug] [2019-05-24T10:14:18.787Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:14:21.629Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:14:21.786Z] Trigger "GetTimeLineWeb" has been found, beginning invocation!
+[debug] [2019-05-24T10:14:21.786Z] 
+[debug] [2019-05-24T10:14:21.786Z] Running GetTimeLineWeb in mode HTTPS
+[debug] [2019-05-24T10:14:21.802Z] {"socketPath":"/tmp/firebase_emulator_invocation_9139.sock"}
+[debug] [2019-05-24T10:14:21.803Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9139.sock"}
+[debug] [2019-05-24T10:14:21.888Z] Ephemeral server used!
+[debug] [2019-05-24T10:14:21.896Z] Ephemeral server survived.
+[info] >  [2019-05-24T10:14:23.989Z]  @firebase/database: FIREBASE WARNING: Exception was thrown by user callback. TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14) 
+[info] >  /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:706
+[info] >              throw e;
+[info] >              ^
+[info] >  
+[info] >  TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:26:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14)
+[debug] [2019-05-24T10:26:57.504Z] File /home/erkankrcr/workSpace/Sendtivity/functions/index.js changed, reloading triggers
+[debug] [2019-05-24T10:26:59.129Z] Functions runtime initialized.
+[debug] [2019-05-24T10:26:59.131Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:27:02.318Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:27:09.622Z] Accepted request GET /sendtivity/us-central1/GetTimeLineWeb?mAuthID=EtOwvNGJKLPkkhKNSB0ROtRUW3s2 --> GetTimeLineWeb
+[debug] [2019-05-24T10:27:10.260Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "GetTimeLineWeb"
+[debug] [2019-05-24T10:27:10.262Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:27:13.145Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:27:13.300Z] Trigger "GetTimeLineWeb" has been found, beginning invocation!
+[debug] [2019-05-24T10:27:13.300Z] 
+[debug] [2019-05-24T10:27:13.301Z] Running GetTimeLineWeb in mode HTTPS
+[debug] [2019-05-24T10:27:13.314Z] {"socketPath":"/tmp/firebase_emulator_invocation_9378.sock"}
+[debug] [2019-05-24T10:27:13.314Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9378.sock"}
+[debug] [2019-05-24T10:27:13.389Z] Ephemeral server used!
+[debug] [2019-05-24T10:27:13.396Z] Ephemeral server survived.
+[info] >  [2019-05-24T10:27:15.875Z]  @firebase/database: FIREBASE WARNING: Exception was thrown by user callback. TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:25:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14) 
+[info] >  /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:706
+[info] >              throw e;
+[info] >              ^
+[info] >  
+[info] >  TypeError: Cannot read property 'PhoneNumberList' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:25:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14)
+[debug] [2019-05-24T10:27:35.594Z] File /home/erkankrcr/workSpace/Sendtivity/functions/index.js changed, reloading triggers
+[debug] [2019-05-24T10:27:37.276Z] Functions runtime initialized.
+[debug] [2019-05-24T10:27:37.277Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:27:40.134Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:27:44.325Z] Accepted request GET /sendtivity/us-central1/GetTimeLineWeb?mAuthID=EtOwvNGJKLPkkhKNSB0ROtRUW3s2 --> GetTimeLineWeb
+[debug] [2019-05-24T10:27:44.996Z] Functions runtime initialized.
+[info] i  functions: Beginning execution of "GetTimeLineWeb"
+[debug] [2019-05-24T10:27:44.998Z] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"protect_env":true,"admin_stubs":true}
+[debug] [2019-05-24T10:27:47.692Z] firebase-admin has been stubbed.
+[info] i  Your code has been provided a "firebase-admin" instance.
+[info] >  {"apiKey":"AIzaSyB8dFCkPIwejsU7cqE1hwYsvVOnmN7pcN0","databaseURL":"https://sendtivity.firebaseio.com","storageBucket":"sendtivity.appspot.com","authDomain":"sendtivity.firebaseapp.com","messagingSenderId":"328630731499","projectId":"sendtivity"}
+[debug] [2019-05-24T10:27:47.863Z] Trigger "GetTimeLineWeb" has been found, beginning invocation!
+[debug] [2019-05-24T10:27:47.864Z] 
+[debug] [2019-05-24T10:27:47.864Z] Running GetTimeLineWeb in mode HTTPS
+[debug] [2019-05-24T10:27:47.873Z] {"socketPath":"/tmp/firebase_emulator_invocation_9558.sock"}
+[debug] [2019-05-24T10:27:47.874Z] [functions] Runtime ready! Sending request! {"socketPath":"/tmp/firebase_emulator_invocation_9558.sock"}
+[debug] [2019-05-24T10:27:47.947Z] Ephemeral server used!
+[debug] [2019-05-24T10:27:47.958Z] Ephemeral server survived.
+[info] >  [2019-05-24T10:27:49.379Z]  @firebase/database: FIREBASE WARNING: Exception was thrown by user callback. TypeError: Cannot read property 'forEach' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:25:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14) 
+[info] >  /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:706
+[info] >              throw e;
+[info] >              ^
+[info] >  
+[info] >  TypeError: Cannot read property 'forEach' of null
+[info] >      at db.ref.on (/home/erkankrcr/workSpace/Sendtivity/functions/index.js:25:18)
+[info] >      at /home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:4492:22
+[info] >      at exceptionGuard (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:695:9)
+[info] >      at EventList.raise (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9772:17)
+[info] >      at EventQueue.raiseQueuedEventsMatchingPredicate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9726:41)
+[info] >      at EventQueue.raiseEventsForChangedPath (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:9710:14)
+[info] >      at Repo.onDataUpdate_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12829:26)
+[info] >      at PersistentConnection.onDataPush_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12125:18)
+[info] >      at PersistentConnection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:12119:18)
+[info] >      at Connection.onDataMessage_ (/home/erkankrcr/workSpace/Sendtivity/functions/node_modules/@firebase/database/dist/index.node.cjs.js:11394:14)
+[info] Shutting down...
